@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76phE2KVL_Wh3O7JXIDmG5VRzG6yZmQ1FA1mPoFOv8xi2FKsFZw">
+   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Itim|Open+Sans+Condensed:300i|Rammetto+One|Roboto:700" rel="stylesheet">
+    <title>Zebra Puzzle</title>
+</head>
+<body>
+<h1>Zebra Puzzle</h1>
+    <h2><strong>Description - </strong></h2>
+    <p class="exr">Five different people in five different houses of different colors, smoke 5 different brands of cigarettes, grow 5 different kinds of animals, drink 5 different kinds of drinks. Now, who drinks water? Who owns the zebra?</p>
+<div class="major">
+<div class="tab main1">
+    <ul>
+        <li class="li1">There are five houses.</li>
+        <li class="li2">The Englishman lives in the red house.</li>
+        <li class="li1">The Spaniard owns the dog.</li>
+        <li class="li2">Coffee is drunk in the green house.</li>
+        <li class="li1">The Ukrainian drinks tea.</li>
+        <li class="li2">The green house is immediately to the right of the ivory house.</li>
+        <li class="li1">The Old Gold smoker owns snails.</li>
+        <li class="li2">Kools are smoked in the yellow house.</li>
+        <li class="li1">Milk is drunk in the middle house.</li>
+        <li class="li2">The Norwegian lives in the first house.</li>
+        <li class="li1">The man who smokes Chesterfields lives in the house next to the man with the fox.</li>
+        <li class="li2">Kools are smoked in the house next to the house where the horse is kept.</li>
+        <li class="li1">The Lucky Strike smoker drinks orange juice.</li>
+        <li class="li2">The Japanese smokes Parliaments.</li>
+        <li class="li1">The Norwegian lives next to the blue house.</li>
+    </ul>
+</div>
+<div  class="tab main">
+
+	<table class="ing">
+   	 <tr>
+      	  <th>Nationality</th>
+       	 <td><button id="N1" onclick="textObjClick('N1')" value="Norwegian">Norwegian</button></td>
+       	 <td><button id="N2" onclick="textObjClick('N2')" value="Englishman">Ukrainian</button></td>
+       	 <td><button id="N3" onclick="textObjClick('N3')" value="Dane">Englishman</button></td>
+       	 <td><button id="N4" onclick="textObjClick('N4')" value="German">Spainard</button></td>
+       	 <td><button id="N5" onclick="textObjClick('N5')" value="Swedish">Japanese</button></td>
+   	 </tr>
+    	<tr>
+        	<th>Color</th>
+			<td><button id="C1" onclick="textObjClick('C1')" value="Red">Yellow</button></td>
+        		<td><button id="C2" onclick="textObjClick('C2')" value="Green">Blue</button></td>
+        		<td><button id="C3" onclick="textObjClick('C3')" value="White">Red</button></td>
+       		 <td><button id="C4" onclick="textObjClick('C4')" value="Yellow">Ivory</button></td>
+        		<td><button id="C5" onclick="textObjClick('C5')" value="Blue">Green</button></td>
+    </tr>
+    <tr>
+        <th>Smoke</th>
+        <td><button id="S1" onclick="textObjClick('S1')" value="Rothmans">Kools</button></td>
+        <td><button id="S2" onclick="textObjClick('S2')" value="Danhill">Chesterfield</button></td>
+        <td><button id="S3" onclick="textObjClick('S3')" value="Marlborough">Old Gold</button></td>
+        <td><button id="S4" onclick="textObjClick('S4')" value="Pell Mell">Lucky Strike</button></td>
+        <td><button id="S5" onclick="textObjClick('S5')" value="Philip Morris">Parliament</button></td>
+    </tr>
+    <tr>
+        <th>Pet</th>
+        <td><button id="A1" onclick="textObjClick('A1')" value="Cats">Fox</button></td>
+        <td><button id="A2" onclick="textObjClick('A2')" value="Birds">Horse</button></td>
+        <td><button id="A3" onclick="textObjClick('A3')" value="Dogs">Snails</button></td>
+        <td><button id="A4" onclick="textObjClick('A4')" value="Fishes">Dog</button></td>
+        <td><button id="A5" onclick="textObjClick('A5')" value="Horses">Zebra</button></td>
+    </tr>
+    <tr>
+        <th>Drink</th>
+        <td><button id="D1" onclick="textObjClick('D1')" value="Tea">Water</button></td>
+        <td><button id="D2" onclick="textObjClick('D2')" value="Milk">Tea</button></td>
+        <td><button id="D3" onclick="textObjClick('D3')" value="Water">Milk</button></td>
+        <td><button id="D4" onclick="textObjClick('D4')" value="Beer">Orange juice</button></td>
+        <td><button id="D5" onclick="textObjClick('D5')" value="Coffee">Coffee</button></td>
+    </tr>
+</table>
+<table class="input_ing">
+    <tr>
+        <th>House</th>
+        <th class="num_home">1</th>
+        <th class="num_home">2</th>
+        <th class="num_home">3</th>
+        <th class="num_home">4</th>
+        <th class="num_home">5</th>
+    </tr>
+    <tr>
+        <th id="1">Nationality</th>
+        <td><button id="11" onclick="tableObjectClicked('11')"></button></td>
+        <td><button id="12" onclick="tableObjectClicked('12')"></button></td>
+        <td><button id="13" onclick="tableObjectClicked('13')"></button></td>
+        <td><button id="14" onclick="tableObjectClicked('14')"></button></td>
+        <td><button id="15" onclick="tableObjectClicked('15')"></button></td>
+    </tr>
+    <tr>
+        <th id="2">Color</th>
+        <td><button id="21" onclick="tableObjectClicked('21')"></button></td>
+        <td><button id="22" onclick="tableObjectClicked('22')"></button></td>
+        <td><button id="23" onclick="tableObjectClicked('23')"></button></td>
+        <td><button id="24" onclick="tableObjectClicked('24')"></button></td>
+        <td><button id="25" onclick="tableObjectClicked('25')"></button></td>
+    </tr>
+    <tr>
+        <th id="3">Smoke</th>
+        <td><button id="31" onclick="tableObjectClicked('31')"></button></td>
+        <td><button id="32" onclick="tableObjectClicked('32')"></button></td>
+        <td><button id="33" onclick="tableObjectClicked('33')"></button></td>
+        <td><button id="34" onclick="tableObjectClicked('34')"></button></td>
+        <td><button id="35" onclick="tableObjectClicked('35')"></button></td>
+    </tr>
+    <tr>
+        <th id="4">Pet</th>
+        <td><button id="41" onclick="tableObjectClicked('41')"></button></td>
+        <td><button id="42" onclick="tableObjectClicked('42')"></button></td>
+        <td><button id="43" onclick="tableObjectClicked('43')"></button></td>
+        <td><button id="44" onclick="tableObjectClicked('44')"></button></td>
+        <td><button id="45" onclick="tableObjectClicked('45')"></button></td>
+    </tr>
+    <tr>
+        <th id="5">Drink</th>
+        <td><button id="51" onclick="tableObjectClicked('51')"></button></td>
+        <td><button id="52" onclick="tableObjectClicked('52')"></button></td>
+        <td><button id="53" onclick="tableObjectClicked('53')"></button></td>
+        <td><button id="54" onclick="tableObjectClicked('54')"></button></td>
+        <td><button id="55" onclick="tableObjectClicked('55')"></button></td>
+    </tr>
+</table>
+</div>
+</div>
+<button class="button" onclick="check()">Check!!!</button>
+    <div class="footer"><p>Made by M.Avetis."</p>
+        <div class="social">
+        <a href="#facebook"> <i></i></a></div>
+    </div>
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
